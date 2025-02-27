@@ -34,7 +34,7 @@ async function showPokeData() {
     const types = pokeData.types.map(typeInfo => typeInfo.type.name);
     pokeInfoElement.innerHTML = ""
     pokeInfoElement.innerHTML = `
-        <h2>${pokeData.name}</h2>
+        <h2>${pokeData.name}-${pokeData.id}</h2>
         <img src="${pokeData.sprites.front_default}" alt="${pokeData.name}">
         <h3>Abilities</h3>
         <ul>
